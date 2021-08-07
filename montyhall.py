@@ -7,9 +7,7 @@ def monty_hall(choice, switch):
     combos = [(i+1, p) for i, p in enumerate(prizes_randomized)]
 
     doors = ["Door 1", "Door 2", "Door 3"]
-    # print(doors)
     door_selected = choice
-    #print("You have chosen Door", door_selected)
 
     unopened = []
     for door in combos:
@@ -19,12 +17,10 @@ def monty_hall(choice, switch):
 
     mhopened = list(filter(lambda d: d[1] == 'g', unopened))[0][0]
 
-    #print("Monty Hall has revealed a door with a goat:")
     doorsUpdated = [door if door != "Door " +
                     str(mhopened) else 'g' for door in doors]
     closed = [int(s[5])
               for s in list(filter(lambda e: e != 'g', doorsUpdated))]
-    # print(doorsUpdated)
 
     if(switch == True):
         newDoor = int(
