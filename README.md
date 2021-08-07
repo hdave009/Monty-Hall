@@ -1,4 +1,4 @@
-# Monty-Hall
+# The Monty Hall Problem
 The Monty Hall problem is a probability puzzle which seems counter-intuitive. 
 Imagine you are on a game show in which there are 3 doors to choose from, 
 2 of them have goats behind them, and 1 of them has a brand-new car.
